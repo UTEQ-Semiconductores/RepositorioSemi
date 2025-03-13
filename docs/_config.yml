@@ -1,0 +1,49 @@
+# Información del sitio
+    title: Repositorio de Ingeniería en Semiconductores
+    description: >- 
+      Repositorio educativo integral para la licenciatura 
+      en ingeniería en semiconductores
+    baseurl: "/RepositorioSemi" # el nombre de tu repositorio
+    url: "https://uteq-semiconductores.github.io/RepositorioSemi/" # tu dominio de GitHub Pages
+    
+    # Configuración de tema (por ejemplo, Just the Docs)
+    remote_theme: pmarsceill/just-the-docs
+    # O tema instalado localmente
+    # theme: minima
+    
+    # Configuración de navegación y estructura
+    collections:
+      fundamentos:
+        output: true
+        permalink: /:collection/:path/
+      electronica:
+        output: true
+        permalink: /:collection/:path/
+      fabricacion:
+        output: true
+        permalink: /:collection/:path/
+      diseno_circuitos:
+        output: true
+        permalink: /:collection/:path/
+      instrumentacion:
+        output: true
+        permalink: /:collection/:path/
+      programacion:
+        output: true
+        permalink: /:collection/:path/
+    
+    # Configuración de compilación
+    markdown: kramdown
+    highlighter: rouge
+    
+    kramdown:
+      math_engine: mathjax
+      syntax_highlighter: rouge
+    
+    # Plugins útiles
+    plugins:
+      - jekyll-feed
+      - jekyll-seo-tag
+      - jekyll-sitemap
+      - jekyll-relative-links
+      - jekyll-optional-front-matter
